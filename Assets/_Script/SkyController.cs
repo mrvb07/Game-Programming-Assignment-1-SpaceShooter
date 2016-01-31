@@ -19,6 +19,7 @@ public class SkyController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        
         this._currentPosition = this._transform.position;
         this._currentPosition -= new Vector2(this.speed, 0);
         this._transform.position = this._currentPosition;
