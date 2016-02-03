@@ -7,7 +7,7 @@ public class SkyController : MonoBehaviour {
     private Vector2 _currentPosition;
 
     //PUBLIC INSTANCE VARIABLES
-    public float speed = 5f;
+    public float speed = 3f;
 
 
 	// Use this for initialization
