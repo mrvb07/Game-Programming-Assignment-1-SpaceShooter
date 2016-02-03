@@ -6,6 +6,7 @@ public class EnemyPlaneController : MonoBehaviour {
     //PRIVATE INSTANCE VARIABLES
     private Transform _transform;
     private Vector2 _currentPosition;
+    private float _speed;
 
     //PUBLIC INSTANCE VARIABLES
     public float minSpeed = 7.5f;
@@ -25,7 +26,7 @@ public class EnemyPlaneController : MonoBehaviour {
     {
 
         this._currentPosition = this._transform.position;
-        this._currentPosition -= new Vector2(Random.Range(minSpeed,maxSpeed), 0);
+        this._currentPosition -= new Vector2(this._speed, 0);
         this._transform.position = this._currentPosition;
 
         if (this._currentPosition.x <= -1200)
@@ -36,6 +37,7 @@ public class EnemyPlaneController : MonoBehaviour {
 
     public void reset()
     {
+        this._speed = Random.Range(this.minSpeed, this.maxSpeed);
         float yPos = Random.Range(200f, 128f);
         this._transform.position = new Vector2(2100f, yPos);
     }

@@ -6,6 +6,7 @@ public class CloudController : MonoBehaviour {
     //PRIVATE INSTANCE VARIABLES
     private Transform _transform;
     private Vector2 _currentPosition;
+    private float _speed;
 
     //PUBLIC INSTANCE VARIABLES
     public float minSpeed = 3f;
@@ -24,7 +25,7 @@ public class CloudController : MonoBehaviour {
     {
 
         this._currentPosition = this._transform.position;
-        this._currentPosition -= new Vector2(Random.Range(minSpeed,maxSpeed), 0);
+        this._currentPosition -= new Vector2(this._speed, 0);
         this._transform.position = this._currentPosition;
 
         if (this._currentPosition.x <= -1055)
@@ -35,7 +36,7 @@ public class CloudController : MonoBehaviour {
 
     public void reset()
     {
-        //float yPos = Random.Range(223f, -208f);
+        this._speed = Random.Range(this.minSpeed, this.maxSpeed);
         this._transform.position = new Vector2(1830f, 200);
     }
 }
