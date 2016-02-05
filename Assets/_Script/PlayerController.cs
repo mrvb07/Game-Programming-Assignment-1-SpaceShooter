@@ -21,7 +21,11 @@ public class PlayerController : MonoBehaviour {
 
         this._currentPosition = this._transform.position;
         this._input = Input.GetAxis("Vertical");
+<<<<<<< HEAD
         //Debug.Log(this._input);
+=======
+        Debug.Log(this._input);
+>>>>>>> 7b65b498807430c6c1adabafa7daf7d77ecc8804
 
         //MOVING PLAYER UP AND DOWN
         this.playerMovement();

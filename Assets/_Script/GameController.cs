@@ -3,6 +3,7 @@ using System.Collections;
 
 public class GameController : MonoBehaviour {
     //PRIVATE INSTANCE VARIABLES
+<<<<<<< HEAD
     private int _scoreValues;
     private int _livesValues; 
     
@@ -39,6 +40,12 @@ public class GameController : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
+=======
+    
+    public EnemyController helicopter;
+	// Use this for initialization
+	void Start () {
+>>>>>>> 7b65b498807430c6c1adabafa7daf7d77ecc8804
         this._init();
 	}
 	
@@ -50,7 +57,11 @@ public class GameController : MonoBehaviour {
     //PRIVATE METHODS
     private void _init()
     {
+<<<<<<< HEAD
         this.ScoreValues = 0;
         this.LivesValues = 5;
+=======
+       
+>>>>>>> 7b65b498807430c6c1adabafa7daf7d77ecc8804
     }
 }

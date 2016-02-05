@@ -6,7 +6,11 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
+<<<<<<< HEAD
     <ProjectGuid>{F84716C8-A33B-0EF5-A1DD-B6FDA1B4DDA6}</ProjectGuid>
+=======
+    <ProjectGuid>{ABB2F24B-6C8F-5650-3A7A-56D9329891D6}</ProjectGuid>
+>>>>>>> 7b65b498807430c6c1adabafa7daf7d77ecc8804
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -50,7 +54,10 @@
      <Compile Include="Assets\_Script\EnemyController.cs" />
      <Compile Include="Assets\_Script\EnemyPlaneController.cs" />
      <Compile Include="Assets\_Script\GameController.cs" />
+<<<<<<< HEAD
      <Compile Include="Assets\_Script\PlayerCollider.cs" />
+=======
+>>>>>>> 7b65b498807430c6c1adabafa7daf7d77ecc8804
      <Compile Include="Assets\_Script\PlayerController.cs" />
      <Compile Include="Assets\_Script\SkyController.cs" />
  <Reference Include="UnityEngine.UI">
