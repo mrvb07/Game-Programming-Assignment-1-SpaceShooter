@@ -11,9 +11,10 @@ public class EnemyController : MonoBehaviour {
     private float _horizontalDrift;
 
     //PUBLIC INSTANCE VARIABLES
-    public float minVerticalSpeed = -0.4f;
-    public float maxVerticalSpeed = 0.4f;
+    public float minVerticalSpeed = -0.55f;
+    public float maxVerticalSpeed = 0.55f;
     public float minHorizontalSpeed = 8f;
+    
     public float maxHorizontalSpeed = 15f;
 
     // Use this for initialization
